@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Sylvia's First Website</title>
+         <style>
+            body {
+                background-image: url("https://image.freepik.com/free-photo/bowl-rice-chopsticks-wood-with-steam-black-background_38692-177.jpg");
+                color: rgb(45, 45, 45);
+                padding: 10px;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(179, 0, 0);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 10px;
+                font-family: "Lucida Console", Monaco, monospace;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(179, 134, 0);
+                display: flex;
+                border-radius: 10px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+                border-radius: 10px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>My First Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    
+                    <img src="https://making-the-web.com/sites/default/files/clipart/155600/funny-asian-faces-155600-3666893.jpg">
+                </div>
+                
+                <div class="content">
+                    <header>Sylvia Nguyen</header>
+                    <p>Student at South Plaquemines High School</p>
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Traveling</li>
+                            <li>Art</li>
+                            <li>Technology</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
