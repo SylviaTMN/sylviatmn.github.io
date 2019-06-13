@@ -7,6 +7,7 @@
     opspark.platform.factory = function (game) {
         game.platforms = game.add.group();
         game.platforms.enableBody = true;
+        game.platoforms.backgroundColor = "#ffd480";
         
         function create(x, y, scaleX, scaleY, immovable) {
             var platform = game.platforms.create(x, y, 'platform');
