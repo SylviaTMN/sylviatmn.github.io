@@ -34,7 +34,7 @@ var init = function (window) {
         // TODO 3 : Call the drawCircle function 5 times //
         
         // TODO 7 : Create a Loop to call drawCircle 100 times
-        for (var counter = 0; counter < 100; counter++) {
+        for (var counter = 0; counter < 400; counter++) {
             drawCircle();
         }
     
@@ -50,12 +50,12 @@ var init = function (window) {
             } 
             // TODO 5a) if the circle has gone past of the LEFT side of the screen then place it on the RIGHT
             else if ( circle.x < 0) {
-                circle.x = 900;
+                circle.x = canvas.width;
             } 
 
             // TODO 5b) if the circle has gone past of the TOP side of the screen then place it on the BOTTOM
             if ( circle.y < 0) {
-                circle.y = 900;
+                circle.y = canvas.height;
             }
             // TODO 5c) if the circle has gone past of the BOTTOM side of the screen then place it OFF-SCREEN TOP
             else if ( circle.y > canvas.height) {

@@ -75,6 +75,14 @@
                 font-size: 1.25em;
             }
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").dblclick(function(){
+                    $("ul.professional-interests").slideToggle();
+                });
+            });
+        </script>
     </head>
     
     <body>
@@ -89,7 +97,6 @@
             
             <main>
                 <div class="sidebar">
-                    
                     <img src="https://making-the-web.com/sites/default/files/clipart/155600/funny-asian-faces-155600-3666893.jpg">
                 </div>
                 
@@ -102,6 +109,19 @@
                             <li>Exploring</li>
                             <li>Art</li>
                             <li>Technology</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <main>
+                <div class="content">
+                    <header>Professional Interests</header>
+                    <section class="interests">
+                        <button>Double-click!</button>
+                        <ul class="professional-interests">
+                            <li>Creating</li>
+                            <li>Software Development</li>
+                            <li>STEAM</li>
                         </ul>
                     </section>
                 </div>
